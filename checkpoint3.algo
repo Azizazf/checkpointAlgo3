@@ -1,0 +1,21 @@
+ALGORITHM TarificationDeBillet
+VAR
+    prix : INTEGER
+    age : INTEGER
+    age:=0
+BEGIN
+    Write ("Entrez Votre Age")
+    Read (age)
+
+   IF (age <= 12) THEN
+     prix  10
+   ELSE_IF (age >= 13 && age <= 17 ) THEN
+    prix 15
+   ELSE
+    prix  20
+   END_IF
+
+    Afficher "Le prix de votre billet est de ", prix, " $"
+
+END
+
